@@ -356,7 +356,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <stringProp name="283068037">ANSWERS:</stringProp>
               <stringProp name="1318691589">status=0</stringProp>
               <stringProp name="402478328">mcc=${generatedMcc}</stringProp>
-              <stringProp name="-995345399">ported=${Ported}</stringProp>
+              <stringProp name="728881267">ported=0</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
