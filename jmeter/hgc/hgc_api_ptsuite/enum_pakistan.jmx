@@ -22,11 +22,6 @@
             <stringProp name="Argument.value">${__P(Duration,3600)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="BaseURL1" elementType="Argument">
-            <stringProp name="Argument.name">BaseURL1</stringProp>
-            <stringProp name="Argument.value">${__P(BaseURL,k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="Ported" elementType="Argument">
             <stringProp name="Argument.name">Ported</stringProp>
             <stringProp name="Argument.value">${__P(Ported,0)}</stringProp>
@@ -62,7 +57,7 @@
       </ThreadGroup>
       <hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request - ported number (In cached)" enabled="true">
-          <stringProp name="hostname">${BaseURL}</stringProp>
+          <stringProp name="hostname">k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
@@ -79,7 +74,7 @@
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preprod" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - prod" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/prod_data.csv</stringProp>
@@ -180,7 +175,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           <hashTree/>
         </hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
-          <stringProp name="hostname">${BaseURL}</stringProp>
+          <stringProp name="hostname">k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
@@ -197,7 +192,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preprod" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -prod" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/prod_data.csv</stringProp>
@@ -443,7 +438,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/var/lib/jenkins/workspace/MNP-ENUM-PT/LoadTestRT.jtl</stringProp>
+          <stringProp name="filename">C:\Users\LENOVO\Downloads\LoadTestRT.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
