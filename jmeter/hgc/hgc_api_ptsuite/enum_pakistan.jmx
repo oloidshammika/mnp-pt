@@ -57,7 +57,7 @@
       </ThreadGroup>
       <hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request - ported number (In cached)" enabled="true">
-          <stringProp name="hostname">k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com</stringProp>
+          <stringProp name="hostname">k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
@@ -122,7 +122,7 @@ vars.put(&quot;msisdnReversed&quot;, msisdnWithoutTrailingQuote);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1270300065">!msisdn:</stringProp>
               <stringProp name="283068037">ANSWERS:</stringProp>
@@ -175,7 +175,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           <hashTree/>
         </hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
-          <stringProp name="hostname">k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com</stringProp>
+          <stringProp name="hostname">k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
@@ -373,7 +373,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1270300065">!msisdn:</stringProp>
               <stringProp name="283068037">ANSWERS:</stringProp>
@@ -438,7 +438,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\LENOVO\Downloads\LoadTestRT.jtl</stringProp>
+          <stringProp name="filename">C:\Users\LENOVO\Downloads\20240314_162358HGC_REST_LoadTest42.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -475,7 +475,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\LENOVO\Downloads\20240314_162358HGC_REST_LoadTest42.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
