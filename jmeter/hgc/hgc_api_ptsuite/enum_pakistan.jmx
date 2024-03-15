@@ -57,7 +57,7 @@
       </ThreadGroup>
       <hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request - ported number (In cached)" enabled="true">
-          <stringProp name="hostname">k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com</stringProp>
+          <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
@@ -175,7 +175,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           <hashTree/>
         </hashTree>
         <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
-          <stringProp name="hostname">k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com</stringProp>
+          <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
