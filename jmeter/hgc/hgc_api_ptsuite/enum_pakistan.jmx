@@ -34,7 +34,7 @@
           </elementProp>
           <elementProp name="BaseURL" elementType="Argument">
             <stringProp name="Argument.name">BaseURL</stringProp>
-            <stringProp name="Argument.value">${__P(BaseURL,k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com)}</stringProp>
+            <stringProp name="Argument.value">${__P(BaseURL,k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -74,7 +74,7 @@
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - prod" enabled="false">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - prod" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/prod_data.csv</stringProp>
@@ -86,7 +86,7 @@
             <stringProp name="variableNames">msisdn,username,password,hostname</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preProd" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preProd" enabled="false">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/data.csv</stringProp>
@@ -127,7 +127,6 @@ vars.put(&quot;msisdnReversed&quot;, msisdnWithoutTrailingQuote);
               <stringProp name="-1270300065">!msisdn:</stringProp>
               <stringProp name="283068037">ANSWERS:</stringProp>
               <stringProp name="1318691589">status=0</stringProp>
-              <stringProp name="728881268">ported=1</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -193,7 +192,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -prod" enabled="false">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -prod" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/prod_data.csv</stringProp>
@@ -205,7 +204,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
             <stringProp name="variableNames">msisdn,username,password,hostname</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preProd" enabled="true">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - preProd" enabled="false">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/data.csv</stringProp>
@@ -439,7 +438,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\LENOVO\Downloads\20240314_162358HGC_REST_LoadTest42.jtl</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -476,7 +475,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\LENOVO\Downloads\20240314_162358HGC_REST_LoadTest42.jtl</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
