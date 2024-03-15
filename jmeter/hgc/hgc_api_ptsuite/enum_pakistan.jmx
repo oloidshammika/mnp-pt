@@ -34,7 +34,7 @@
           </elementProp>
           <elementProp name="BaseURL" elementType="Argument">
             <stringProp name="Argument.name">BaseURL</stringProp>
-            <stringProp name="Argument.value">${__P(BaseURL,k8s-mnp-mnpenumm-0082d048ea-e86988155af489cb.elb.ap-southeast-1.amazonaws.com)}</stringProp>
+            <stringProp name="Argument.value">${__P(BaseURL,k8s-mnp-mnpenumm-b76fd115af-9bc0593a88c50504.elb.eu-west-1.amazonaws.com)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -174,7 +174,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
+        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="false">
           <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
