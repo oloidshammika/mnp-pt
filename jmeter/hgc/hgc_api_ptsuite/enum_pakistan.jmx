@@ -56,7 +56,7 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
       <hashTree>
-        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request - ported number (In cached)" enabled="true">
+        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request - ported number (In cached)" enabled="false">
           <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
@@ -174,7 +174,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="false">
+        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
           <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
