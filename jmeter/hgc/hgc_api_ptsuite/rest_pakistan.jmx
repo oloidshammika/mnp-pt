@@ -9,17 +9,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="Threads" elementType="Argument">
             <stringProp name="Argument.name">Threads</stringProp>
-            <stringProp name="Argument.value">${__P(Threads,300)}</stringProp>
+            <stringProp name="Argument.value">${__P(Threads,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RampTime" elementType="Argument">
             <stringProp name="Argument.name">RampTime</stringProp>
-            <stringProp name="Argument.value">${__P(RampTime,3)}</stringProp>
+            <stringProp name="Argument.value">${__P(RampTime,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="Duration" elementType="Argument">
             <stringProp name="Argument.name">Duration</stringProp>
-            <stringProp name="Argument.value">${__P(Duration,3600)}</stringProp>
+            <stringProp name="Argument.value">${__P(Duration,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="Ported" elementType="Argument">
@@ -510,7 +510,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
