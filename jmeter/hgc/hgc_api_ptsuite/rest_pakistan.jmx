@@ -62,6 +62,11 @@
             <stringProp name="Argument.name">TOKEN5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">${__P(ports,443)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </elementProp>
     </TestPlan>
@@ -435,6 +440,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
           <stringProp name="HTTPSampler.domain">${BaseURL}</stringProp>
+          <stringProp name="HTTPSampler.port">${ports}</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">mnp-pre-prod/hgc-intl/${generatedMsisdn}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
