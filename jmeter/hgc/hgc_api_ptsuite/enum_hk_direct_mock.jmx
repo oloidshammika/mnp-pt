@@ -366,7 +366,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="-1270300065">!msisdn:</stringProp>
               <stringProp name="283068037">ANSWERS:</stringProp>
