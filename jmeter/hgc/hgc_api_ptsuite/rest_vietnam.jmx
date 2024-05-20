@@ -37,25 +37,25 @@
           <elementProp name="TOKEN1" elementType="Argument">
             <stringProp name="Argument.name">TOKEN1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">aGsxOjEyMw==</stringProp>
+            <stringProp name="Argument.value">cHJlcHJvZF92aWV0bmFtMDE6dmlldG5hbTEyMw==</stringProp>
           </elementProp>
           <elementProp name="TOKEN2" elementType="Argument">
             <stringProp name="Argument.name">TOKEN2</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">aGsyOjEyMw==</stringProp>
+            <stringProp name="Argument.value">cHJlcHJvZF92aWV0bmFtMDI6dmlldG5hbTEyMw==</stringProp>
           </elementProp>
           <elementProp name="TOKEN3" elementType="Argument">
             <stringProp name="Argument.name">TOKEN3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">aGszOjEyMw==</stringProp>
+            <stringProp name="Argument.value">cHJlcHJvZF92aWV0bmFtMDM6dmlldG5hbTEyMw==</stringProp>
           </elementProp>
           <elementProp name="TOKEN4" elementType="Argument">
             <stringProp name="Argument.name">TOKEN4</stringProp>
-            <stringProp name="Argument.value">aGs1OjEyMw==</stringProp>
+            <stringProp name="Argument.value">cHJlcHJvZF92aWV0bmFtMDQ6dmlldG5hbTEyMw==</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="TOKEN5" elementType="Argument">
-            <stringProp name="Argument.value">aGs3OjEyMw==</stringProp>
+            <stringProp name="Argument.value">cHJlcHJvZF92aWV0bmFtMDQ6dmlldG5hbTEyMw==</stringProp>
             <stringProp name="Argument.name">TOKEN5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -431,7 +431,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod">
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
           <intProp name="HTTPSampler.connect_timeout">60000</intProp>
           <intProp name="HTTPSampler.response_timeout">60000</intProp>
@@ -456,8 +456,8 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
 
 // Define the regular expressions for MSISDN
 String[] regexArray = {
-    &quot;^842\\d{8}$;452;70;Ufone&quot; ,
-    &quot;^841\\d{8}$;452;50;Ufone2&quot; ,
+    &quot;^8481\\d{7}$;452;70;Ufone&quot; ,
+    &quot;^8481\\d{7}$;452;50;Ufone2&quot; ,
 };
 
 // Select a random regular expression
@@ -469,7 +469,7 @@ String selectedEntry = regexArray[index];
 String randomRegex = selectedEntry.split(&quot;;&quot;)[0];
 
 // Generate MSISDN based on the selected regular expression
-StringBuilder msisdnBuilder = new StringBuilder(&quot;842&quot;);
+StringBuilder msisdnBuilder = new StringBuilder(&quot;8481&quot;);
 
 // Ensure that the 2nd digit is not 5, 6, 8, or 9
 msisdnBuilder.append(random.nextInt(2) + 1);
@@ -505,7 +505,7 @@ vars.put(&quot;generatedMsisdn&quot;, generatedMsisdn);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
@@ -541,7 +541,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="49586">200</stringProp>
             </collectionProp>
@@ -552,7 +552,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
             <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
-          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
+          <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion">
             <stringProp name="JSON_PATH">$.status</stringProp>
             <stringProp name="EXPECTED_VALUE">0</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
