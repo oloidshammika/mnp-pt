@@ -433,7 +433,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod" enabled="true">
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
           <intProp name="HTTPSampler.connect_timeout">60000</intProp>
           <intProp name="HTTPSampler.response_timeout">60000</intProp>
@@ -496,7 +496,7 @@ for (int i = 0; i &lt; 8; i++) {
 }
 
 // Trim the last two digits to ensure the MSISDN length is 11
-String generatedMsisdn = msisdnBuilder.toString().substring(0, 10);
+String generatedMsisdn = msisdnBuilder.toString().substring(0, 11);
 
 // Output the selected entry and generated MSISDN
 log.info(&quot;Selected Entry: &quot; + selectedEntry);
