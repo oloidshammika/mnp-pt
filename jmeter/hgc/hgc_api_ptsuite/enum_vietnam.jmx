@@ -36,6 +36,8 @@
           </elementProp>
         </collectionProp>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -170,7 +172,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges">
+        <kg.apc.jmeter.samplers.UDPSampler guiclass="kg.apc.jmeter.samplers.UDPSamplerGui" testclass="kg.apc.jmeter.samplers.UDPSampler" testname="jp@gc - UDP Request- Number ranges" enabled="true">
           <stringProp name="hostname">${BaseURL}</stringProp>
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
@@ -189,7 +191,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
             <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
           </DNSCacheManager>
           <hashTree/>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -prod">
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config -prod" enabled="true">
             <stringProp name="delimiter">,</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="filename">data/pre_prod_vietnam.csv</stringProp>
@@ -213,7 +215,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
             <stringProp name="variableNames">msisdn,username,password,hostname</stringProp>
           </CSVDataSet>
           <hashTree/>
-          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor">
             <boolProp name="resetInterpreter">false</boolProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
@@ -221,8 +223,8 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
 
 // Define the regular expressions for MSISDN along with corresponding MCC, MNC, and market names
 String[] regexArray = {
-    &quot;^842\\d{8}$;452;70;Ufone&quot; ,
-    &quot;^841\\d{8}$;452;50;Ufone2&quot; ,
+    &quot;^8481\\d{7}$;452;70;Ufone&quot; ,
+    &quot;^8482\\d{7}$;452;50;Ufone2&quot; ,
 };
 
 // Select a random regular expression
@@ -238,7 +240,7 @@ String mnc = entryParts[2];
 String marketName = entryParts[3];
 
 // Generate MSISDN based on the selected regular expression
-StringBuilder msisdnBuilder = new StringBuilder(&quot;852&quot;);
+StringBuilder msisdnBuilder = new StringBuilder(&quot;8481&quot;);
 
 // Ensure that the 2nd digit is not 5, 6, 8, or 9
 msisdnBuilder.append(random.nextInt(2) + 1);
@@ -259,7 +261,7 @@ msisdnBuilder.append(fourthDigit);
 
 // Generate the rest of the digits
 for (int i = 0; i &lt; 8; i++) {
-    msisdnBuilder.append(random.nextInt(10));
+    msisdnBuilder.append(random.nextInt(11));
 }
 
 // Trim the last two digits to ensure the MSISDN length is 11
