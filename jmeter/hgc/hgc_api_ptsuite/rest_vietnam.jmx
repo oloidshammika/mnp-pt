@@ -433,11 +433,11 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod">
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
           <intProp name="HTTPSampler.connect_timeout">60000</intProp>
           <intProp name="HTTPSampler.response_timeout">60000</intProp>
-          <stringProp name="HTTPSampler.domain">https://7hj1nejje5.execute-api.eu-west-1.amazonaws.com</stringProp>
+          <stringProp name="HTTPSampler.domain">7hj1nejje5.execute-api.eu-west-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">/mnp-pre-prod/hgc-intl/${generatedMsisdn}</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -563,7 +563,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">true</boolProp>
           <objProp>
             <name>saveConfig</name>
