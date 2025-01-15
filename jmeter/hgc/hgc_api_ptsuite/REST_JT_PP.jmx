@@ -597,7 +597,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"/tmp/jmeterResults/resulttree_REST_JT_PP.jtl</stringProp>
+          <stringProp name="filename"/tmp/resulttree_REST_JT_PP.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
