@@ -600,7 +600,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
           <stringProp name="filename"/tmp/jmeterResults/resulttree_REST_JT_PP.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
