@@ -433,7 +433,7 @@ vars.put(&quot;msisdnRegex&quot;, msisdnWithoutTrailingQuote);
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="REST request - preprod" enabled="true">
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
           <intProp name="HTTPSampler.connect_timeout">60000</intProp>
           <intProp name="HTTPSampler.response_timeout">60000</intProp>
@@ -506,7 +506,7 @@ vars.put(&quot;generatedMsisdn&quot;, generatedMsisdn);
 </stringProp>
           </BeanShellPreProcessor>
           <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
@@ -564,7 +564,7 @@ vars.put(&quot;msisdn&quot;, msisdn);
           <hashTree/>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -597,10 +597,10 @@ vars.put(&quot;msisdn&quot;, msisdn);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">/tmt/resulttree_${__time(MM-dd-yyyy-HH-mm-ss,)}.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
