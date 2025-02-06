@@ -58,7 +58,7 @@
           <stringProp name="port">9001</stringProp>
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
-          <stringProp name="timeout">5000</stringProp>
+          <stringProp name="timeout">10000</stringProp>
           <stringProp name="data">${msisdnReversed}.${password}.${username}.hgc-intl.com. NAPTR IN</stringProp>
           <stringProp name="encodeclass">kg.apc.jmeter.samplers.DNSJavaDecoderToRawData</stringProp>
           <stringProp name="bind_address"></stringProp>
