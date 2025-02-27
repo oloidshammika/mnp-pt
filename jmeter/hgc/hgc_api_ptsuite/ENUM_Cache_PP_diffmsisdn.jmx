@@ -176,7 +176,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
           <stringProp name="timeout">5000</stringProp>
-          <stringProp name="data">${msisdnRegex}.c83t7HBGPn.PBP15991984.hgc-intl.com. NAPTR IN</stringProp>
+          <stringProp name="data">0.0.0.1.1.1.1.1.1.3.2.9.c83t7HBGPn.PBP15991984.hgc-intl.com. NAPTR IN</stringProp>
           <stringProp name="encodeclass">kg.apc.jmeter.samplers.DNSJavaDecoderToRawData</stringProp>
           <stringProp name="bind_address"></stringProp>
           <stringProp name="bind_port"></stringProp>
