@@ -39,9 +39,9 @@
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
-        <intProp name="ThreadGroup.num_threads">3</intProp>
-        <intProp name="ThreadGroup.ramp_time">1</intProp>
-        <longProp name="ThreadGroup.duration">600</longProp>
+        <intProp name="ThreadGroup.num_threads">20</intProp>
+        <intProp name="ThreadGroup.ramp_time">50</intProp>
+        <longProp name="ThreadGroup.duration">3600</longProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -176,7 +176,7 @@ vars.put(&quot;msisdn1&quot;, reversedWithDots.toString());
           <boolProp name="waitresponse">true</boolProp>
           <boolProp name="closechannel">false</boolProp>
           <stringProp name="timeout">5000</stringProp>
-          <stringProp name="data">0.0.0.1.1.1.1.1.1.3.2.9.c83t7HBGPn.PBP15991984.hgc-intl.com. NAPTR IN</stringProp>
+          <stringProp name="data">${msisdnRegex}.c83t7HBGPn.PBP15991984.hgc-intl.com. NAPTR IN</stringProp>
           <stringProp name="encodeclass">kg.apc.jmeter.samplers.DNSJavaDecoderToRawData</stringProp>
           <stringProp name="bind_address"></stringProp>
           <stringProp name="bind_port"></stringProp>
